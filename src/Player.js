@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Player.css'
 
 const useAudio = src => {
     const [audio] = useState(new Audio(src));
@@ -23,12 +24,23 @@ const useAudio = src => {
     return[playing, toggle];
 }
 
-const Player = ({ src }) => {
+const Player = ({ songName, upward, src }) => {
     const [playing, toggle] = useAudio(src);
 
+    Player.defaultProps = {
+            songName: "Name of the Song",
+            upward: true
+    }
+
     return (
-        <div>
-            <button onClick={toggle}>{playing ? <img src="/pause-icon.svg" alt="pause-icon" /> : <img src="/play-icon.svg" alt="play-icon" />}</button>
+        <div className="player-widget">
+            <div className={!upward ? "downward" : " "} >
+                <span className="interval-song-name">"{songName}"</span>
+            </div>
+            <div className="interval-commands">
+                {upward ? <img src="/arrow-up.svg" alt="arrow-up" /> : <img src="/arrow-down.svg" alt="arrow-down" />}
+                <button onClick={toggle}>{playing ? <img src="/pause-icon.svg" alt="pause-icon" /> : <img src="/play-icon.svg" alt="play-icon" />}</button>
+            </div>
         </div>
     )
 }
