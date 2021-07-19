@@ -28,7 +28,7 @@ const Player = ({ src }) => {
 
     return (
         <div>
-            <button onClick={toggle}>{playing ? "Pause" : "Play"}</button>
+            <button onClick={toggle}>{playing ? <img src="/pause-icon.svg" alt="pause-icon" /> : <img src="/play-icon.svg" alt="play-icon" />}</button>
         </div>
     )
 }
