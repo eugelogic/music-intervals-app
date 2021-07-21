@@ -24,24 +24,25 @@ const useAudio = src => {
     return[playing, toggle];
 }
 
-const PlayerWidget = ({ songName, upward, src }) => {
+const PlayerWidget = ({ songName, darkBG, upward, src }) => {
     const [playing, toggle] = useAudio(src);
 
     PlayerWidget.defaultProps = {
             songName: "Name of the Song",
-            upward: true
+            upward: true,
+            darkBG: false
     }
 
     return (
         <div className="player-widget">
             <div className={!upward ? "downward" : ""} >
-                <span className="interval-song-name">
+                <span className={`interval-song-name${darkBG ? "--white" : ""}`}>
                     <p>"{songName}"</p>
                 </span>
             </div>
             <div className="player-ui">
-                {upward ? <img src="/arrow-up.svg" alt="arrow-up" /> : <img src="/arrow-down.svg" alt="arrow-down" />}
-                <button onClick={toggle}>{playing ? <img src="/pause-icon.svg" alt="pause-icon" /> : <img src="/play-icon.svg" alt="play-icon" />}</button>
+                {upward ? <img src={darkBG ? '/arrow-white-up.svg' : '/arrow-black-up.svg'} alt="arrow-up" /> : <img src={darkBG ? '/arrow-white-down.svg' : '/arrow-black-down.svg'} alt="arrow-down" />}
+                <button onClick={toggle}>{playing ? <img src={darkBG ? '/pause-icon-white.svg' : '/pause-icon-black.svg'} alt="pause-icon" /> : <img src={darkBG ? '/play-icon-white.svg' : '/play-icon-black.svg'} alt="play-icon" />}</button>
             </div>
         </div>
     )

@@ -10,13 +10,13 @@ function App() {
 
         <div className="interval-bar__top--min-second">
           <div className="interval-widget">
-            <PlayerWidget songName="But Not For Me" upward={(true)} src="/audio/sample.mp3" />
+            <PlayerWidget songName="But Not For Me" darkBG={(true)} upward={(true)} src="/audio/sample.mp3" />
           <div>
-            <span className="interval-name">
+            <span className="interval-name--white">
               <p>minor 2nd</p>
             </span>
           </div>
-            <PlayerWidget songName="Summertime" upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
+            <PlayerWidget songName="Summertime" darkBG={(true)} upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
           </div>
         </div>
 
@@ -39,13 +39,13 @@ function App() {
 
         <div className="interval-bar__top--maj-second">
           <div className="interval-widget">
-            <PlayerWidget upward={(true)} src="/audio/sample.mp3" />
+            <PlayerWidget darkBG={(true)} upward={(true)} src="/audio/sample.mp3" />
           <div>
-            <span className="interval-name">
+            <span className="interval-name--white">
               <p>Major 2nd</p>
             </span>
           </div>
-            <PlayerWidget upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
+            <PlayerWidget darkBG={(true)} upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
           </div>
         </div>
 
@@ -68,13 +68,13 @@ function App() {
 
         <div className="interval-bar__top--min-third">
           <div className="interval-widget">
-            <PlayerWidget upward={(true)} src="/audio/sample.mp3" />
+            <PlayerWidget darkBG={(true)} upward={(true)} src="/audio/sample.mp3" />
           <div>
-            <span className="interval-name">
+            <span className="interval-name--white">
               <p>minor 3rd</p>
             </span>
           </div>
-            <PlayerWidget upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
+            <PlayerWidget darkBG={(true)} upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
           </div>
         </div>
 
@@ -97,13 +97,13 @@ function App() {
 
         <div className="interval-bar__top--maj-third">
           <div className="interval-widget">
-            <PlayerWidget upward={(true)} src="/audio/sample.mp3" />
+            <PlayerWidget darkBG={(true)} upward={(true)} src="/audio/sample.mp3" />
           <div>
-            <span className="interval-name">
+            <span className="interval-name--white">
               <p>Major 3rd</p>
             </span>
           </div>
-            <PlayerWidget upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
+            <PlayerWidget darkBG={(true)} upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
           </div>
         </div>
 
@@ -126,13 +126,13 @@ function App() {
 
         <div className="interval-bar__top--perf-fourth">
           <div className="interval-widget">
-            <PlayerWidget upward={(true)} src="/audio/sample.mp3" />
+            <PlayerWidget darkBG={(true)} upward={(true)} src="/audio/sample.mp3" />
           <div>
-            <span className="interval-name">
+            <span className="interval-name--white">
               <p>Perfect 4th</p>
             </span>
           </div>
-            <PlayerWidget upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
+            <PlayerWidget darkBG={(true)} upward={(false)} src="/audio/Interval-minor 2nd.m4a" />
           </div>
         </div>
 
@@ -172,13 +172,13 @@ function App() {
 
         <div className="interval-bar__octave">
           <div className="interval-widget">
-            <PlayerWidget upward={(true)} src="/audio/Interval-minor 2nd.m4a" />
+            <PlayerWidget darkBG={(true)} upward={(true)} src="/audio/Interval-minor 2nd.m4a" />
           <div>
-            <span className="interval-name">
+            <span className="interval-name--white">
               <p>Octave</p>
             </span>
           </div>
-            <PlayerWidget upward={(false)} src="/audio/sample.mp3" />
+            <PlayerWidget darkBG={(true)} upward={(false)} src="/audio/sample.mp3" />
           </div>
         </div>
 

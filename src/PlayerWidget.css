@@ -8,6 +8,12 @@
     text-align: center;
 }
 
+.player-widget .interval-song-name--white p {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
 .downward {
 order: 2;
 }

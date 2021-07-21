@@ -14,6 +14,11 @@
   align-items: center;
 }
 
+.interval-bar:nth-of-type(6),
+.interval-bar:nth-of-type(7) {
+  box-shadow: none;
+}
+
 .interval-bar__top--min-second,
 .interval-bar__bottom--maj-seventh,
 .interval-bar__top--maj-second,
@@ -26,49 +31,72 @@
 .interval-bar__bottom--perf-fifth,
 .interval-bar__aug-fourth,
 .interval-bar__octave {
-  display: flex;
-  align-items: center;
-  justify-items: center;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.interval-bar__top--min-second,
+.interval-bar__top--maj-second,
+.interval-bar__top--min-third,
+.interval-bar__top--maj-third,
+.interval-bar__top--perf-fourth,
+.interval-bar__octave {
+  background-color: #191919;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.interval-bar__bottom--maj-seventh,
+.interval-bar__bottom--min-seventh,
+.interval-bar__bottom--maj-sixth,
+.interval-bar__bottom--min-sixth,
+.interval-bar__bottom--perf-fifth,
+.interval-bar__aug-fourth {
+  border-bottom: 2px black solid;
+  border-right: 2px black solid;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 /* Column One */
 .interval-bar__top--min-second {
-  flex: 1 1 20%
+  flex: 1 1 22%
 }
 .interval-bar__bottom--maj-seventh {
-  flex: 1 1 80%;
+  flex: 1 1 78%;
 }
 
 /* Column Two */
 .interval-bar__top--maj-second {
-  flex: 1 1 26%
+  flex: 1 1 28%
 }
 .interval-bar__bottom--min-seventh {
-  flex: 1 1 74%;
+  flex: 1 1 72%;
 }
 
 /* Column Three */
 .interval-bar__top--min-third {
-  flex: 1 1 32%
+  flex: 1 1 34%
 }
 .interval-bar__bottom--maj-sixth {
-  flex: 1 1 68%;
+  flex: 1 1 66%;
 }
 
 /* Column Four */
 .interval-bar__top--maj-third {
-  flex: 1 1 38%
+  flex: 1 1 40%
 }
 .interval-bar__bottom--min-sixth {
-  flex: 1 1 62%;
+  flex: 1 1 60%;
 }
 
 /* Column Five */
 .interval-bar__top--perf-fourth {
-  flex: 1 1 44%
+  flex: 1 1 46%
 }
 .interval-bar__bottom--perf-fifth {
-  flex: 1 1 56%;
+  flex: 1 1 54%;
 }
 
 /* Column Six */
@@ -81,6 +109,11 @@
   flex: 1 1 auto;
 }
 
-.interval-name p {
+.interval-name p,
+.interval-name--white p {
   text-align: center;
+}
+
+.interval-name--white p {
+  color: white;
 }
