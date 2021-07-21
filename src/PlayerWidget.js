@@ -34,10 +34,12 @@ const PlayerWidget = ({ songName, upward, src }) => {
 
     return (
         <div className="player-widget">
-            <div className={!upward ? "downward" : " "} >
-                <span className="interval-song-name">"{songName}"</span>
+            <div className={!upward ? "downward" : ""} >
+                <span className="interval-song-name">
+                    <p>"{songName}"</p>
+                </span>
             </div>
-            <div className="interval-commands">
+            <div className="player-ui">
                 {upward ? <img src="/arrow-up.svg" alt="arrow-up" /> : <img src="/arrow-down.svg" alt="arrow-down" />}
                 <button onClick={toggle}>{playing ? <img src="/pause-icon.svg" alt="pause-icon" /> : <img src="/play-icon.svg" alt="play-icon" />}</button>
             </div>

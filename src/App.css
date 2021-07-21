@@ -1,3 +1,20 @@
 * {
   margin: 0;
 }
+
+.interval-app {
+  min-height: 100vh;
+}
+
+.interval-bar__top--min-second {
+  display: grid;
+  place-items: center;
+}
+
+.interval-widget {
+  max-width: 15vw;
+}
+
+.interval-name p {
+  text-align: center;
+}

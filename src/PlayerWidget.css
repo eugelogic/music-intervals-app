@@ -3,8 +3,9 @@
     flex-direction: column;
 }
 
-.player-widget .interval-song-name {
+.player-widget .interval-song-name p {
     font-size: 16px;
+    text-align: center;
 }
 
 .downward {
@@ -16,3 +17,8 @@ order: 2;
     padding: 0;
     background-color: transparent;
   }
+
+.player-ui {
+    display: flex;
+    justify-content: space-evenly;
+}
