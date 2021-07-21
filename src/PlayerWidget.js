@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Player.css'
+import './PlayerWidget.css'
 
 const useAudio = src => {
     const [audio] = useState(new Audio(src));
@@ -24,10 +24,10 @@ const useAudio = src => {
     return[playing, toggle];
 }
 
-const Player = ({ songName, upward, src }) => {
+const PlayerWidget = ({ songName, upward, src }) => {
     const [playing, toggle] = useAudio(src);
 
-    Player.defaultProps = {
+    PlayerWidget.defaultProps = {
             songName: "Name of the Song",
             upward: true
     }
@@ -45,4 +45,4 @@ const Player = ({ songName, upward, src }) => {
     )
 }
 
-export default Player
+export default PlayerWidget
