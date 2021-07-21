@@ -4,15 +4,81 @@
 
 .interval-app {
   min-height: 100vh;
+  display: flex;
 }
 
+.interval-bar {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interval-bar__top--min-second,
+.interval-bar__bottom--maj-seventh,
+.interval-bar__top--maj-second,
+.interval-bar__bottom--min-seventh,
+.interval-bar__top--min-third,
+.interval-bar__bottom--maj-sixth,
+.interval-bar__top--maj-third,
+.interval-bar__bottom--min-sixth,
+.interval-bar__top--perf-fourth,
+.interval-bar__bottom--perf-fifth,
+.interval-bar__aug-fourth,
+.interval-bar__octave {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Column One */
 .interval-bar__top--min-second {
-  display: grid;
-  place-items: center;
+  flex: 1 1 20%
+}
+.interval-bar__bottom--maj-seventh {
+  flex: 1 1 80%;
 }
 
-.interval-widget {
-  max-width: 15vw;
+/* Column Two */
+.interval-bar__top--maj-second {
+  flex: 1 1 26%
+}
+.interval-bar__bottom--min-seventh {
+  flex: 1 1 74%;
+}
+
+/* Column Three */
+.interval-bar__top--min-third {
+  flex: 1 1 32%
+}
+.interval-bar__bottom--maj-sixth {
+  flex: 1 1 68%;
+}
+
+/* Column Four */
+.interval-bar__top--maj-third {
+  flex: 1 1 38%
+}
+.interval-bar__bottom--min-sixth {
+  flex: 1 1 62%;
+}
+
+/* Column Five */
+.interval-bar__top--perf-fourth {
+  flex: 1 1 44%
+}
+.interval-bar__bottom--perf-fifth {
+  flex: 1 1 56%;
+}
+
+/* Column Six */
+.interval-bar__aug-fourth {
+  flex: 1 1 auto;
+}
+
+/* Column Seven */
+.interval-bar__octave {
+  flex: 1 1 auto;
 }
 
 .interval-name p {
