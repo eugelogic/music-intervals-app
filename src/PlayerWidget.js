@@ -24,14 +24,8 @@ const useAudio = src => {
     return[playing, toggle];
 }
 
-const PlayerWidget = ({ songName, darkBG, upward, src }) => {
+const PlayerWidget = ({ songName = "Name of the Song", darkBG = false, upward = true, src }) => {
     const [playing, toggle] = useAudio(src);
-
-    PlayerWidget.defaultProps = {
-            songName: "Name of the Song",
-            upward: true,
-            darkBG: false
-    }
 
     return (
         <div className="player-widget">
