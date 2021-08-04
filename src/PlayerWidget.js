@@ -42,7 +42,7 @@ const PlayerWidget = ({ songName, darkBG, upward, src }) => {
             </div>
             <div className="player-ui">
                 {upward ? <img src={darkBG ? '/arrow-white-up.svg' : '/arrow-black-up.svg'} alt="arrow-up" /> : <img src={darkBG ? '/arrow-white-down.svg' : '/arrow-black-down.svg'} alt="arrow-down" />}
-                <button onClick={toggle}>{playing ? <img src={darkBG ? '/pause-icon-white.svg' : '/pause-icon-black.svg'} alt="pause-icon" /> : <img src={darkBG ? '/play-icon-white.svg' : '/play-icon-black.svg'} alt="play-icon" />}</button>
+                <button onClickCapture={toggle}>{playing ? <img src={darkBG ? '/pause-icon-white.svg' : '/pause-icon-black.svg'} alt="pause-icon" /> : <img src={darkBG ? '/play-icon-white.svg' : '/play-icon-black.svg'} alt="play-icon" />}</button>
             </div>
         </div>
     )
